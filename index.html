@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.js"></script>
+
+    <script type="text/javascript" src="../eel.js"></script>
+    <script src="./script.js"></script>
+    <link rel="icon" href="file.ico">
+    <title>PyCoder</title>
+</head>
+<body style="height: 100%;">
+    <div class="container-fluid" style="height: 100%;">
+        <div class="row" style="height: 100%;">
+            <div class="col-md-4 col-xl-3" style="background-color: aliceblue;" style="height: 100%;">
+                <input type="button" id="add-item" class="btn btn-primary w-100 mb-1 mt-1" value="Add item">
+                <input type="text" id="search" class="form-control" placeholder="Search...">
+                <div class="list-group w-100 mt-3" id="item-list"
+                    style="height: calc(100vh - 120px); overflow-y: scroll;">
+                    <a class="list-group-item py-1" href="#">Loading...</a>
+                </div>
+            </div>
+            <div class="col-md-8 col-xl-9">
+                <form class="mt-2 mb-2">
+                    <div class="form-row">
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="title" style="font-weight: bold; font-size:large">
+                        </div>
+                        <div class="col-md-2 col-xl-1">
+                            <input type="button" class="btn btn-primary" value="Save" id="btn-save">
+                        </div>
+                        <div class="col-md-2 col-xl-1">
+                            <input type="button" class="btn btn-danger" value="remove" id="btn-delete">
+                        </div>
+
+                    </div>
+                </form>
+                <div id="editor" style="width: 97%; height:93%;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
